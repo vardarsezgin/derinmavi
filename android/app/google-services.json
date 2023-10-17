@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "946937447757",
+    "firebase_url": "https://derindalis-d60df-default-rtdb.firebaseio.com",
+    "project_id": "derindalis-d60df",
+    "storage_bucket": "derindalis-d60df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946937447757:android:ad826d970d614831036304",
+        "android_client_info": {
+          "package_name": "app.derindalis.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946937447757-776vdcivhil7nbtf6s9i4ue68aqsdm2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.derindalis.com",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "946937447757-17t2guk26fd2epmborm11111dits88er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDccJvngcC7dDnJlmxYxvoEwCFbD0x2aHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946937447757-17t2guk26fd2epmborm11111dits88er.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "946937447757-58hfnffrps9tk1ke8fbk8rovj1mnprjj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "yonetim.derinmavi.com"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946937447757:android:d0b97ce614c22e94036304",
+        "android_client_info": {
+          "package_name": "yonetim.derinmavi.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946937447757-jutu4f5l9g66ceo5vm5g8d0p58gcs3p5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "yonetim.derinmavi.com",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "946937447757-17t2guk26fd2epmborm11111dits88er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDccJvngcC7dDnJlmxYxvoEwCFbD0x2aHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946937447757-17t2guk26fd2epmborm11111dits88er.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "946937447757-58hfnffrps9tk1ke8fbk8rovj1mnprjj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "yonetim.derinmavi.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

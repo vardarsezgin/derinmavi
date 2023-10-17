@@ -1,0 +1,271 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if true;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /users/{parent}/divelogs/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/divelogs/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /divePoints/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /divePoints/{parent}/tags/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/tags/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /datas/{parent}/kulupVeOkullar/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/kulupVeOkullar/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /notifications/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /datas/{parent}/randomTextMP/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/randomTextMP/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /allPosts/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /allPosts/{parent}/comments/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/comments/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /allPosts/{parent}/postTags/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/postTags/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{parent}/editModules/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/editModules/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /users/{parent}/private_notifications/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/private_notifications/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{parent}/general_notif_userlist/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/general_notif_userlist/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{parent}/app_notif_userlist/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/app_notif_userlist/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /federations/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /users/{parent}/certificates/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/certificates/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{parent}/admins/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/admins/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /datas/{parent}/permissionTypes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/permissionTypes/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /allPosts/{parent}/post_likes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/post_likes/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /testForum/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /testForumReplies/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /datas/{parent}/oneCikan/{document} {
+      allow create: if request.auth != null;
+      allow read: if true;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/oneCikan/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/bookmarked/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/bookmarked/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /sikayetler/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /userDatas/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /ff_user_push_notifications/{id} {
+      allow read, update, delete: if false;
+      allow create: if /databases/$(database)/documents/users/$(request.auth.uid) == request.resource.data.sender;
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "divelogs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "diveDate",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "diveTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "testForum",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "thread_user",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "allPosts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isApproved",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "allPosts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isApproved",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "post_tags",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "time_posted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "allPosts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isApproved",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "num_likes",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divePoints",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isPublished",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Ptimestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isDeclined",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "certificates",
+      "fieldPath": "isApproved",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "oneCikan",
+      "fieldPath": "tarih",
+      "indexes": [
+        {
+          "order": "DESCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "editModules",
+      "fieldPath": "moduleName",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "divelogs",
+      "fieldPath": "diveRefNumber",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
